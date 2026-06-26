@@ -142,3 +142,20 @@ document.getElementById('form-login').addEventListener('submit', async function(
         msjLogin.style.color = 'red';
     }
 });
+
+// --- USER DEMO ---
+function inicializarUsuarioDePrueba() {
+    const usuarios = obtenerUsuarios();
+    
+    if (usuarios.length === 0) {
+        const usuarioPrueba = { 
+            nombre: "Karim Test", 
+            email: "karim@test.com", 
+            password: "password123" 
+        };
+        guardarUsuario(usuarioPrueba);
+        console.log("Usuario de prueba inicializado correctamente.");
+    }
+}
+
+inicializarUsuarioDePrueba();
