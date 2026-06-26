@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.contenedor {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap; /* baja si la pantalla es chica */
+}
+
+.tarjeta {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    width: 320px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.grupo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.grupo input {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.grupo-check {
+    margin-bottom: 15px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    min-height: 15px;
+    margin-top: 2px;
+    display: block;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.mensaje {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* estilos para el cartel de asincronía */
+#loading {
+    position: fixed;
+    top: 0; left: 0; width: 100%;
+    background: rgba(0,0,0,0.8);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    z-index: 1000;
+}
+
+.oculto {
+    display: none !important;
+}
